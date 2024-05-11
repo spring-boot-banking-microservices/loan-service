@@ -8,11 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
-import java.util.Random;
+import java.security.SecureRandom;
 
 @Service
 public class LoanService {
-  private final Random random = new Random();
+  private final SecureRandom random = new SecureRandom();
   private final LoanRepository loanRepository;
 
   @Autowired
